@@ -44,7 +44,8 @@ public class Prediction {
 				previousRatings.add(document.getDouble(RATING_COLUMN));
 			}
 		});
-                               /**
+ 
+		/**
 		var map = function() 
 			{ if (this.item == "0634029363" && this.rating == 2) 
 			{ emit(this.user, 1); }
@@ -54,7 +55,7 @@ public class Prediction {
 			{ emit(this.user, 1); }
 			if (this.item == “B001QE997E" && this.rating == 5) 
 			{ emit(this.user, 1); }}
-		 */
+		 **/
  
 		// Construct mapper function
 		StringBuilder sb = new StringBuilder();
@@ -90,6 +91,7 @@ public class Prediction {
 				}
 			}
 		});
+		
 		//printList(similarUsers);
 		//System.out.println("\n\n\n");
 		Collections.sort(similarUsers);

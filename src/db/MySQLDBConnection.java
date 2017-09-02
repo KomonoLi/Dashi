@@ -22,7 +22,6 @@ import java.util.HashSet;
 
 
 
-
 public class MySQLDBConnection implements DBConnection {
 
 	private Connection conn = null;
